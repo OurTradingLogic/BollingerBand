@@ -12,7 +12,7 @@ import TradingList as tlist
 import CommonEnum as cenum
 import xlsxwriter 
 
-
+#test
 #trade_list = com.gettradinglist()
 #trade_list = com.getfromjson()
 trade_list = tlist.gettradinglist(cenum.ExportFrom.JSON)
