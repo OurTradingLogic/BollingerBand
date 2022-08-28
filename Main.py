@@ -11,7 +11,7 @@ import SmartAPI as sapi
 import TradingList as tlist
 import CommonEnum as cenum
 import xlsxwriter 
-
+#test
 #test
 #trade_list = com.gettradinglist()
 #trade_list = com.getfromjson()
