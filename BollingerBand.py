@@ -62,7 +62,6 @@ def implement_bb_strategy(stock, signal_for):
     lower_bb = stock['lower_bb']
     upper_bb = stock['upper_bb']
     buy_price = []
-    prev_buy_price = 0
     sell_price = []
     bb_signal = []
     buy_date = []
@@ -71,16 +70,12 @@ def implement_bb_strategy(stock, signal_for):
     prev_line_at = InLine.NONE
     temp_prev_line_at = InLine.NONE
 
-    break_out_lower_bb = 0
-    
     for i in range(len(data)):
         if temp_prev_line_at != InLine.NONE:
            prev_line_at = temp_prev_line_at
         if data[i-1] > lower_bb[i-1] and data[i] < lower_bb[i]:
-            #if signal != 1:
             if (prev_line_at == InLine.SMA_LINE):
                 buy_price.append(data[i])
-                prev_buy_price = data[i]
                 sell_price.append(np.nan)
                 signal = 1
                 signal_for = 0
@@ -91,7 +86,6 @@ def implement_bb_strategy(stock, signal_for):
                 sell_price.append(np.nan)
                 bb_signal.append(0)
         elif data[i-1] < upper_bb[i-1] and data[i] > upper_bb[i]:
-            #if signal != -1 and signal_for == 0 :
             if signal_for == 0 :
                 buy_price.append(np.nan)
                 sell_price.append(data[i])
@@ -119,8 +113,6 @@ def calculateProfit(buy_price, sell_price, bb_signal, stock, ticket):
     for i in range(len(bb_signal)):
         if bb_signal[i] == 1:
             buyAmt.append(buy_price[i])
-        #elif bb_signal[i] == -1:
-            #sellAmt = sell_price[i]
             
     sellAmt = stock['close'][len(stock)-1]
     result = 0
