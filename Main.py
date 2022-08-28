@@ -37,18 +37,18 @@ print("**************Final*****************")
 
 #Order()
 
-#obj = SmartConnect(api_key = "sQYQltij")
+#obj = SmartConnect(api_key = "AccessKey")
 #this obj will be used later on to make all the trade requests.
 
 #Let's login
-#data = obj.generateSession("A762009","ajiCNB@2")
+#data = obj.generateSession("Username","Password")
 
 #for trades in trade_list:
     #sapi.place_order(obj, trades)
 
 #sapi.Order(obj)
 
-#obj.terminateSession("YA762009")
+#obj.terminateSession("SessionId")
 
 
 
