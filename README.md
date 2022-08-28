@@ -13,9 +13,9 @@ Prerequisite:
 Step 1: Open github site for BollingerBand
 <br/> https://github.com/OurTradingLogic/BollingerBand<br/> 
 
-Step 2: Clone source code by executing below comment in any terminals like cmd, powershel, terminal within visual studio/code <br/> 
+Step 2: Clone source code by executing below comment in any terminals like cmd, powershel, terminal within visual studio/code 
 ```
-git checkout https://github.com/OurTradingLogic/BollingerBand.git
+git clone https://github.com/OurTradingLogic/BollingerBand.git
 ```
 Step 3: Now check git status by executing below comment.
 ```
@@ -29,8 +29,8 @@ Step 5: Checkout development branch.
 ```
 git checkout development
 ```
-Step 6: Again check git status by following Step 3.
-Step 7: Make change and commit it by following below comment.
+Step 6: Again check git status by following Step 3.<br/> 
+Step 7: Make change and commit it by following below comment.<br/> 
 ```
 git commit -m "Your commit message"
 ```
