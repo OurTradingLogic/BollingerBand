@@ -8,7 +8,8 @@ Step 3: Dowlownd source code in Zip format<br/>
 Prerequisite:
 1. Basic Python Code Setup- refer https://youtu.be/iQPbnTteGs4
 2. Install yfinance package- refer https://youtu.be/zyiKntx7r6c
-3. Git intallation
+3. Bollinger Band Indicator- refer https://youtu.be/OpAVgTVLs0I
+4. Git intallation
 
 Step 1: Open github site for BollingerBand
 <br/> https://github.com/OurTradingLogic/BollingerBand<br/> 
