@@ -39,3 +39,10 @@ Step 8: If we need to push our changes to remote, then push that changes.
 git push
 ```
 Step 9: Successfully Completed.
+
+# For executing in Colab google python executor
+
+Please the file BollingerBand_Colab.ipynb
+```
+https://github.com/OurTradingLogic/BollingerBand/blob/development/BollingerBand_Colab.ipynb
+```
